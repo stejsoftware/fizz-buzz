@@ -1,6 +1,23 @@
 {
-  "name": "fizz-buzz",
+  "name": "@stej/fizz-buzz",
   "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT"
+  "main": "lib/index.js",
+  "license": "MIT",
+  "description": "Simple app to show that I know how to program",
+  "scripts": {
+    "test": "mocha"
+  },
+  "devDependencies": {
+    "chai": "*",
+    "mocha": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stejsoftware/fizz-buzz.git"
+  },
+  "author": "Jonathan Meyer",
+  "bugs": {
+    "url": "https://github.com/stejsoftware/fizz-buzz/issues"
+  },
+  "homepage": "https://github.com/stejsoftware/fizz-buzz#readme"
 }
