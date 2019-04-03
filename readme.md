@@ -21,6 +21,6 @@ yarn add @stej/fizz-buzz
 ## Module Usage
 
 ```
-const fb = require("./lib/index");
-console.log(JSON.stringify(fb(11)));
+const fizzbuzz = require("@stej/fizz-buzz");
+console.log(fizzbuzz(11));
 ```
