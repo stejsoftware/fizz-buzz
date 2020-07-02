@@ -1,15 +1,25 @@
 {
+  "include": ["src", "types"],
+  "exclude": ["**/__tests__"],
   "compilerOptions": {
-    "module": "CommonJS",
-    "target": "ES5",
-    "noImplicitAny": true,
-    "removeComments": true,
+    "module": "esnext",
+    "lib": ["dom", "esnext"],
+    "importHelpers": true,
+    "declaration": true,
     "outDir": "dist/",
-    "allowJs": true,
-    "checkJs": true,
     "sourceMap": true,
+    "rootDir": "./src",
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "moduleResolution": "node",
+    "baseUrl": "./",
+    "paths": {
+      "*": ["src/*", "node_modules/*"]
+    },
+    "jsx": "react",
     "esModuleInterop": true
-  },
-  "include": ["src/**/*"],
-  "exclude": ["node_modules", "**/*.spec.ts", "**/__tests__"]
+  }
 }

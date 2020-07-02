@@ -1,12 +1,15 @@
 {
   "name": "@stej/fizz-buzz",
   "version": "2.0.0",
-  "main": "dist/fizzbuzz.js",
+  "module": "dist/fizzbuzz.js",
   "license": "MIT",
   "description": "Simple app to show that I know how to program",
   "scripts": {
+    "clean": "rimraf ./dist ./coverage",
+    "prebuild": "npm run clean",
     "build": "tsc",
-    "test": "jest"
+    "test": "jest",
+    "prepare": "npm run build"
   },
   "devDependencies": {
     "@types/jest": "^26.0.3",
@@ -23,5 +26,7 @@
     "url": "https://github.com/stejsoftware/fizz-buzz/issues"
   },
   "homepage": "https://github.com/stejsoftware/fizz-buzz#readme",
-  "dependencies": {}
+  "dependencies": {
+    "rimraf": "^3.0.2"
+  }
 }
